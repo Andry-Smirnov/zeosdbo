@@ -1644,7 +1644,7 @@ const
     Name: ConnProps_MYSQL_OPT_GUESS_CONNECTION;
     Purpose: 'For an application linked against the libmysqld embedded server '+
       'library, this enables the library to guess whether to use the embedded '+
-      'server or a remote server. ìGuessî means that if the host name is set '+
+      'server or a remote server. ‚ÄúGuess‚Äù means that if the host name is set '+
       'and is not localhost, it uses a remote server. This behavior is the '+
       'default. MYSQL_OPT_USE_EMBEDDED_CONNECTION and '+
       'MYSQL_OPT_USE_REMOTE_CONNECTION can be used to override it. This option '+
@@ -2499,7 +2499,7 @@ const
   );
   ZProp_isc_dpb_sys_user_name : TZProperty = (
     Name: ConnProps_isc_dpb_sys_user_name;
-    Purpose: 'User validation parameter. System database administratorís user '+
+    Purpose: 'User validation parameter. System database administrator‚Äôs user '+
       'name, up to 255 characters.';
     ValueType: pvtString; LevelTypes: [pltConnection];
     Values: ''; Default: ''; Alias: '';

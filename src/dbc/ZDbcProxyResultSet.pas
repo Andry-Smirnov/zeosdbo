@@ -451,9 +451,9 @@ begin
 //      {$ENDIF}
 
 //    addProperty('codepage', IntToStr(MD.GetColumnCodePage(x)));  // is this needed? All data is unicode in the end?
-//    h‰? codepage und hasdefaultvalue gibts nicht am columntype?
+//    h–¥? codepage und hasdefaultvalue gibts nicht am columntype?
 
-      // todo: kl‰ren, was hier vonwegen der oben auskommentierten Unicodegeschichten rein muﬂ...
+      // todo: kl–¥ren, was hier vonwegen der oben auskommentierten Unicodegeschichten rein mu–Ø...
       CatalogName := ColumnNode.Attributes['catalogname'];
       {$IFNDEF ZEOS73UP}
       ColumnDisplaySize := StrToInt(ColumnNode.Attributes['displaysize']);

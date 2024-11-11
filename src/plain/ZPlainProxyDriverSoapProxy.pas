@@ -80,9 +80,9 @@ type
 
   // ************************************************************************ //
   // Die folgenden Typen, auf die im WSDL-Dokument Bezug genommen wird, sind in dieser Datei
-  // nicht repräsentiert. Sie sind entweder Aliase[@] anderer repräsentierter Typen oder auf sie wurde Bezug genommen,
+  // nicht reprÐ´sentiert. Sie sind entweder Aliase[@] anderer reprÐ´sentierter Typen oder auf sie wurde Bezug genommen,
   // aber sie sind in diesem Dokument nicht[!] deklariert. Die Typen aus letzterer Kategorie
-  // sind in der Regel vordefinierten/bekannten XML- oder Embarcadero-Typen zugeordnet; sie könnten aber auf 
+  // sind in der Regel vordefinierten/bekannten XML- oder Embarcadero-Typen zugeordnet; sie kÑ†nnten aber auf 
   // ein inkorrektes WSDL-Dokument hinweisen, das einen Schematyp nicht deklariert oder importiert hat.
   // ************************************************************************ //
   // !:unsignedInt     - "http://www.w3.org/2001/XMLSchema"[]
@@ -104,131 +104,131 @@ type
   IZeosProxy = interface(IInvokable)
   ['{269AF2BC-9AAB-FBA4-61C1-37129CFC7BFC}']
 
-    // Entpacken nicht möglich: 
+    // Entpacken nicht mÑ†glich: 
     //     - Eingabemeldung besteht aus mehreren Parts
     //     - Ausgabemeldung besteht aus mehreren Parts
     function  Connect(const UserName: string; const Password: string; const DbName: string; const InProperties: string; out OutProperties: string; out DbInfo: string
                       ): string; stdcall;
 
-    // Entpacken nicht möglich: 
+    // Entpacken nicht mÑ†glich: 
     //     - Eingabe-Part verweist auf kein Element
     procedure Disconnect(const ConnectionID: string); stdcall;
 
-    // Entpacken nicht möglich: 
+    // Entpacken nicht mÑ†glich: 
     //     - Eingabemeldung besteht aus mehreren Parts
     procedure SetAutoCommit(const ConnectionID: string; const Value: Boolean); stdcall;
 
-    // Entpacken nicht möglich: 
+    // Entpacken nicht mÑ†glich: 
     //     - Eingabe-Part verweist auf kein Element
     procedure Commit(const ConnectionID: string); stdcall;
 
-    // Entpacken nicht möglich: 
+    // Entpacken nicht mÑ†glich: 
     //     - Eingabe-Part verweist auf kein Element
     procedure Rollback(const ConnectionID: string); stdcall;
 
-    // Entpacken nicht möglich: 
+    // Entpacken nicht mÑ†glich: 
     //     - Eingabemeldung besteht aus mehreren Parts
     //     - Ausgabe-Part verweist auf kein Element
     function  SetProperties(const ConnectionID: string; const Properties: string): string; stdcall;
 
-    // Entpacken nicht möglich: 
+    // Entpacken nicht mÑ†glich: 
     //     - Eingabemeldung besteht aus mehreren Parts
     //     - Ausgabe-Part verweist auf kein Element
     function  ExecuteStatement(const ConnectionID: string; const SQL: string; const Parameters: string; const MaxRows: Cardinal): string; stdcall;
 
-    // Entpacken nicht möglich: 
+    // Entpacken nicht mÑ†glich: 
     //     - Eingabemeldung besteht aus mehreren Parts
     //     - Ausgabe-Part verweist auf kein Element
     function  GetTables(const ConnectionID: string; const Catalog: string; const SchemaPattern: string; const TableNamePattern: string; const Types: string): string; stdcall;
 
-    // Entpacken nicht möglich: 
+    // Entpacken nicht mÑ†glich: 
     //     - Eingabe-Part verweist auf kein Element
     //     - Ausgabe-Part verweist auf kein Element
     function  GetSchemas(const ConnectionID: string): string; stdcall;
 
-    // Entpacken nicht möglich: 
+    // Entpacken nicht mÑ†glich: 
     //     - Eingabe-Part verweist auf kein Element
     //     - Ausgabe-Part verweist auf kein Element
     function  GetCatalogs(const ConnectionID: string): string; stdcall;
 
-    // Entpacken nicht möglich: 
+    // Entpacken nicht mÑ†glich: 
     //     - Eingabe-Part verweist auf kein Element
     //     - Ausgabe-Part verweist auf kein Element
     function  GetTableTypes(const ConnectionID: string): string; stdcall;
 
-    // Entpacken nicht möglich: 
+    // Entpacken nicht mÑ†glich: 
     //     - Eingabemeldung besteht aus mehreren Parts
     //     - Ausgabe-Part verweist auf kein Element
     function  GetColumns(const ConnectionID: string; const Catalog: string; const SchemaPattern: string; const TableNamePattern: string; const ColumnNamePattern: string): string; stdcall;
 
-    // Entpacken nicht möglich: 
+    // Entpacken nicht mÑ†glich: 
     //     - Eingabemeldung besteht aus mehreren Parts
     //     - Ausgabe-Part verweist auf kein Element
     function  GetTablePrivileges(const ConnectionID: string; const Catalog: string; const SchemaPattern: string; const TableNamePattern: string): string; stdcall;
 
-    // Entpacken nicht möglich: 
+    // Entpacken nicht mÑ†glich: 
     //     - Eingabemeldung besteht aus mehreren Parts
     //     - Ausgabe-Part verweist auf kein Element
     function  GetColumnPrivileges(const ConnectionID: string; const Catalog: string; const Schema: string; const Table: string; const ColumnNamePattern: string): string; stdcall;
 
-    // Entpacken nicht möglich: 
+    // Entpacken nicht mÑ†glich: 
     //     - Eingabemeldung besteht aus mehreren Parts
     //     - Ausgabe-Part verweist auf kein Element
     function  GetPrimaryKeys(const ConnectionID: string; const Catalog: string; const Schema: string; const Table: string): string; stdcall;
 
-    // Entpacken nicht möglich: 
+    // Entpacken nicht mÑ†glich: 
     //     - Eingabemeldung besteht aus mehreren Parts
     //     - Ausgabe-Part verweist auf kein Element
     function  GetImportedKeys(const ConnectionID: string; const Catalog: string; const Schema: string; const Table: string): string; stdcall;
 
-    // Entpacken nicht möglich: 
+    // Entpacken nicht mÑ†glich: 
     //     - Eingabemeldung besteht aus mehreren Parts
     //     - Ausgabe-Part verweist auf kein Element
     function  GetExportedKeys(const ConnectionID: string; const Catalog: string; const Schema: string; const Table: string): string; stdcall;
 
-    // Entpacken nicht möglich: 
+    // Entpacken nicht mÑ†glich: 
     //     - Eingabemeldung besteht aus mehreren Parts
     //     - Ausgabe-Part verweist auf kein Element
     function  GetCrossReference(const ConnectionID: string; const PrimaryCatalog: string; const PrimarySchema: string; const PrimaryTable: string; const ForeignCatalog: string; const ForeignSchema: string; 
                                 const ForeignTable: string): string; stdcall;
 
-    // Entpacken nicht möglich: 
+    // Entpacken nicht mÑ†glich: 
     //     - Eingabemeldung besteht aus mehreren Parts
     //     - Ausgabe-Part verweist auf kein Element
     function  GetIndexInfo(const ConnectionID: string; const Catalog: string; const Schema: string; const Table: string; const Unique: Boolean; const Approximate: Boolean
                            ): string; stdcall;
 
-    // Entpacken nicht möglich: 
+    // Entpacken nicht mÑ†glich: 
     //     - Eingabemeldung besteht aus mehreren Parts
     //     - Ausgabe-Part verweist auf kein Element
     function  GetSequences(const ConnectionID: string; const Catalog: string; const SchemaPattern: string; const SequenceNamePattern: string): string; stdcall;
 
-    // Entpacken nicht möglich: 
+    // Entpacken nicht mÑ†glich: 
     //     - Eingabemeldung besteht aus mehreren Parts
     //     - Ausgabe-Part verweist auf kein Element
     function  GetTriggers(const ConnectionID: string; const Catalog: string; const SchemaPattern: string; const TableNamePattern: string; const TriggerNamePattern: string): string; stdcall;
 
-    // Entpacken nicht möglich: 
+    // Entpacken nicht mÑ†glich: 
     //     - Eingabemeldung besteht aus mehreren Parts
     //     - Ausgabe-Part verweist auf kein Element
     function  GetProcedures(const ConnectionID: string; const Catalog: string; const SchemaPattern: string; const ProcedureNamePattern: string): string; stdcall;
 
-    // Entpacken nicht möglich: 
+    // Entpacken nicht mÑ†glich: 
     //     - Eingabemeldung besteht aus mehreren Parts
     //     - Ausgabe-Part verweist auf kein Element
     function  GetProcedureColumns(const ConnectionID: string; const Catalog: string; const SchemaPattern: string; const ProcedureNamePattern: string; const ColumnNamePattern: string): string; stdcall;
 
-    // Entpacken nicht möglich: 
+    // Entpacken nicht mÑ†glich: 
     //     - Eingabe-Part verweist auf kein Element
     //     - Ausgabe-Part verweist auf kein Element
     function  GetCharacterSets(const ConnectionID: string): string; stdcall;
 
-    // Entpacken nicht möglich: 
+    // Entpacken nicht mÑ†glich: 
     //     - Eingabe-Part verweist auf kein Element
     //     - Ausgabe-Part verweist auf kein Element
     function  StartTransaction(const ConnectionID: string): Integer; stdcall;
 
-    // Entpacken nicht möglich: 
+    // Entpacken nicht mÑ†glich: 
     //     - Ausgabe-Part verweist auf kein Element
     function  GetPublicKeys: string; stdcall;
   end;

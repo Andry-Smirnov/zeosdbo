@@ -188,7 +188,7 @@ type
 
     procedure SetAutoCommit(Value: Boolean); override;
 
-    //todo: Get- und SetCatalog implementieren, sowie setter für andere Properties:
+    //todo: Get- und SetCatalog implementieren, sowie setter fÑŒr andere Properties:
     /// <summary>Sets a catalog name in order to select a subspace of this
     ///  Connection's database in which to work. If the driver does not support
     ///  catalogs, it will silently ignore this request.</summary>

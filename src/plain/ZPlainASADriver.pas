@@ -1101,31 +1101,31 @@ end;
 procedure TZASAPlainDriver.LoadCodePages;
 begin
   { MultiByte }
-  AddCodePage('TIS-620', 1, ceAnsi, 874); {Windows Thail‰ndisch, ISO8859-11, bin‰re Sortierung}
+  AddCodePage('TIS-620', 1, ceAnsi, 874); {Windows Thail–¥ndisch, ISO8859-11, bin–¥re Sortierung}
   AddCodePage('Windows-31J', 2, ceAnsi, 932); {Japanese Shift-JIS mit Microsoft-Erweiterungen}
   AddCodePage('GBK', 3, ceAnsi, 936); {GB2312-80 Simplified Chinese}
   AddCodePage('IBM949', 4, ceAnsi, 949); {Korean KS C 5601-1987-Codierung, Wansung}
   AddCodePage('BIG5', 5, ceAnsi, 950); {Traditionelles Chinesisch, Big 5-Kodierung mit HKSCS}
   AddCodePage('EUC_CHINA', 6, ceAnsi, zCP_GB2312); {GB2312-80 Simplified Chinese}
-  AddCodePage('UTF-8', 7, ceUTF8, zCP_UTF8, '', 3); {UTF-8, 8-Bit-Mehrbyte-Zeichensatz f¸r Unicode, bin‰re Reihenfolge}
+  AddCodePage('UTF-8', 7, ceUTF8, zCP_UTF8, '', 3); {UTF-8, 8-Bit-Mehrbyte-Zeichensatz f—år Unicode, bin–¥re Reihenfolge}
 
   { SingleByte }
   AddCodePage('Windows-1250', 8, ceAnsi, 1250); {Windows Latin 2, Polnisch}
   AddCodePage('Windows-1251', 9, ceAnsi, 1251); {Windows Kyrillisch}
   AddCodePage('Windows-1252', 10, ceAnsi, 1252); { Windows Latin 1, Western}
   AddCodePage('Windows-1253', 11, ceAnsi, 1253); {Windows Griechisch, ISO8859-7 mit Erweiterungen}
-  AddCodePage('Windows-1254', 12, ceAnsi, 1254); {Windows T¸rkisch, ISO8859-9 mit Erweiterungen}
-  AddCodePage('Windows-1255', 13, ceAnsi, 1255); {Windows Hebr‰isch, ISO8859-8 mit Erweiterungen}
+  AddCodePage('Windows-1254', 12, ceAnsi, 1254); {Windows T—årkisch, ISO8859-9 mit Erweiterungen}
+  AddCodePage('Windows-1255', 13, ceAnsi, 1255); {Windows Hebr–¥isch, ISO8859-8 mit Erweiterungen}
   AddCodePage('Windows-1256', 14, ceAnsi, 1256); {Windows Arabisch, ISO8859-6 mit Erweiterungen}
   AddCodePage('Windows-1257', 15, ceAnsi, 1257); {Windows Baltische Staaten, Litauisch}
   AddCodePage('Windows-1258', 16, ceAnsi, 1258); {Windows }
 
   {*nix}
   AddCodePage('ISO_8859-6:1987', 17, ceAnsi, 1256); {Arabisch, ISO8859-6 mit Erweiterungen}
-  AddCodePage('ISO_8859-2:1987', 18, ceAnsi, 1251); {Zentral- und Osteurop‰isch}
+  AddCodePage('ISO_8859-2:1987', 18, ceAnsi, 1251); {Zentral- und Osteurop–¥isch}
   //ISO-8859-15 //ISO9LATIN1
   //ISO_8859-7:1987 //Griechisch
-  //ISO_8859-8:1988 //Hebr‰isch
+  //ISO_8859-8:1988 //Hebr–¥isch
   //ISO-8859-15 //Italienisch
   //EUC-JP //Japanisch
   //EUC-KR //Koreanisch
@@ -1133,7 +1133,7 @@ begin
   AddCodePage('GB2312', 19, ceAnsi, zCP_GB2312); {GB2312-80 Simplified Chinese}
   //EUC-TW //Traditionelles Chinesisch - Taiwan
   AddCodePage('Big5-HKSCS', 20, ceAnsi, 950); {Traditionelles Chinesisch, Big 5-Kodierung mit HKSCS}
-  AddCodePage('ISO_8859-9:1989', 21, ceAnsi, 920); //T¸rkisch
+  AddCodePage('ISO_8859-9:1989', 21, ceAnsi, 920); //T—årkisch
 end;
 
 function TZASAPlainDriver.Clone: IZPlainDriver;

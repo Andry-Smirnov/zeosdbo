@@ -59,7 +59,7 @@ uses
   ZDbcIntfs,ZCompatibility{$IFDEF TLIST_IS_DEPRECATED}, ZSysUtils, ZClasses{$ENDIF};
 
 const
-  mask = 'æææ#2ææ0#ææ39æ-V„–FFVæææ';  { define your own mask  }
+  mask = 'Ð¶Ð¶Ð¶#2Ð¶Ð¶0#Ð¶Ð¶39Ð¶-Vâ€žâ€“FFVÐ¶Ð¶Ð¶';  { define your own mask  }
 
 type
   TZConnectionGroup = class;
