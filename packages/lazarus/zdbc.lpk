@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CONFIG>
-  <Package Version="4">
+  <Package Version="5">
     <PathDelim Value="\"/>
     <Name Value="zdbc"/>
     <AddToProjectUsesSection Value="True"/>
@@ -14,7 +14,6 @@
       <Parsing>
         <SyntaxOptions>
           <SyntaxMode Value="Delphi"/>
-          <UseAnsiStrings Value="False"/>
         </SyntaxOptions>
       </Parsing>
     </CompilerOptions>
@@ -334,6 +333,7 @@
         <UnitName Value="ZDbcXmlUtils"/>
       </Item78>
     </Files>
+    <CompatibilityMode Value="True"/>
     <RequiredPkgs Count="4">
       <Item1>
         <PackageName Value="zplain"/>

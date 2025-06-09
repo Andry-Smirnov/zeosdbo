@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CONFIG>
-  <Package Version="4">
+  <Package Version="5">
     <Name Value="zparsesql"/>
     <AddToProjectUsesSection Value="True"/>
     <CompilerOptions>
@@ -12,12 +12,11 @@
       <Parsing>
         <SyntaxOptions>
           <SyntaxMode Value="Delphi"/>
-          <UseAnsiStrings Value="False"/>
         </SyntaxOptions>
       </Parsing>
     </CompilerOptions>
     <Description Value="Zeos SQL Parsing Classes and Interfaces"/>
-    <Version Major="8" Minor="0"/>
+    <Version Major="8"/>
     <Files Count="19">
       <Item1>
         <Filename Value="../../src/parsesql/ZSybaseToken.pas"/>
@@ -96,10 +95,11 @@
         <UnitName Value="ZODBCToken"/>
       </Item19>
     </Files>
+    <CompatibilityMode Value="True"/>
     <RequiredPkgs Count="2">
       <Item1>
         <PackageName Value="zcore"/>
-        <MinVersion Major="8" Minor="0" Valid="True"/>
+        <MinVersion Major="8" Valid="True"/>
       </Item1>
       <Item2>
         <PackageName Value="FCL"/>
@@ -111,7 +111,6 @@
     </UsageOptions>
     <PublishOptions>
       <Version Value="2"/>
-      <IgnoreBinaries Value="False"/>
     </PublishOptions>
     <CustomOptions Items="ExternHelp" Version="2">
       <_ExternHelp Items="Count"/>
