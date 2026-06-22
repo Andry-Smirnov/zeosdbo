@@ -14,6 +14,7 @@
       <Parsing>
         <SyntaxOptions>
           <SyntaxMode Value="Delphi"/>
+          <UseAnsiStrings Value="False"/>
         </SyntaxOptions>
       </Parsing>
     </CompilerOptions>
@@ -333,7 +334,6 @@
         <UnitName Value="ZDbcXmlUtils"/>
       </Item78>
     </Files>
-    <CompatibilityMode Value="True"/>
     <RequiredPkgs Count="4">
       <Item1>
         <PackageName Value="zplain"/>

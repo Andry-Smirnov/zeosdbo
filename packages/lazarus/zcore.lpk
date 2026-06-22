@@ -12,6 +12,7 @@
       <Parsing>
         <SyntaxOptions>
           <SyntaxMode Value="Delphi"/>
+          <UseAnsiStrings Value="False"/>
         </SyntaxOptions>
       </Parsing>
       <Other>
@@ -97,8 +98,11 @@
         <Filename Value="../../src/core/ZXmlCompat.pas"/>
         <UnitName Value="ZXmlCompat"/>
       </Item17>
+      <Item18>
+        <Filename Value="../../src/core/ZExceptions.pas"/>
+        <UnitName Value="ZExceptions"/>
+      </Item18>
     </Files>
-    <CompatibilityMode Value="True"/>
     <RequiredPkgs Count="1">
       <Item1>
         <PackageName Value="FCL"/>
